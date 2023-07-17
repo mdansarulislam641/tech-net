@@ -17,12 +17,8 @@ import { addToCart, decrementQuantity, removeCart } from '@/redux/features/cart/
 
 export default function Cart() {
   const dispatch = useAppDispatch();
-  //! Dummy data
-  const {products} = useAppSelector(state => state.carts)
- const total = 0 ;
-
-  //! **
-
+  const {products, total} = useAppSelector(state => state.carts)
+ 
   return (
     <Sheet>
       <SheetTrigger>
